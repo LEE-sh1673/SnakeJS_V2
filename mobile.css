@@ -1,0 +1,47 @@
+.mobile-controller {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 100vh;
+}
+
+.mobile-controller .controller__btn {
+  width: 60px;
+  height: 60px;
+  background: #e9e9e2;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  color: #6b7280;
+}
+
+.mobile-controller .controller__btn:focus {
+  outline: none;
+}
+
+.mobile-controller .controller__btn:active {
+  transform: scale(0.98);
+}
+
+.mobile-controller .controller__side-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0.8rem auto;
+}
+
+.mobile-controller .controller__side-wrapper button:nth-child(1) {
+  margin-right: 50px;
+}
+
+.mobile-controller .controller__side-wrapper button:nth-child(2) {
+  margin-left: 50px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+  .mobile-controller {
+    display: flex;
+  }
+}
